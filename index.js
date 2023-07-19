@@ -24,13 +24,13 @@ search.addEventListener('click', () =>{
       }
 
       error404.style.display = 'none';
-         error404.classList.remove('fadeIn');
+      error404.classList.remove('fadeIn');
 
       const image = document.querySelector('weather-box img');
       const temperature = document.querySelector('.weather-box .temperature');
       const description = document.querySelector('.weather-box .description');
-      const humidity = document.querySelector('.weather-box .humidity span');
-      const wind = document.querySelector('.weather-box .wind span');
+      const humidity = document.querySelector('.weather-details .humidity span');
+      const wind = document.querySelector('.weather-details .wind span');
 
       switch (json.weather[0].main){
          case 'Clear':
@@ -46,7 +46,7 @@ search.addEventListener('click', () =>{
             break;
 
          case 'Clouds':
-            image.src = 'images/clouds.png';
+            image.src = 'images/cloud.png';
             break;
             
          case 'Haze':
