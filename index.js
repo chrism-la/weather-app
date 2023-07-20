@@ -58,7 +58,7 @@ search.addEventListener('click', () =>{
          }
 
 
-         temperature.innerHTML = `${parseInt(json.main.temp)}<span>℃</span>`;
+         temperature.innerHTML = `${parseInt(json.main.temp)}<span℃</span>`;
          description.innerHTML =`${json.weather[0].description}`;
          humidity.innerHTML = `${json.main.humidity}%`;
          wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
